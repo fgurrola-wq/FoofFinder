@@ -1,1 +1,1 @@
-# FoofFinder
+# FoodFinder

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Detalle de receta | FoodFinder</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Estilos del proyecto -->
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- JavaScript de Bootstrap y del proyecto -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    defer
+  ></script>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="saltar-contenido" href="#contenido">
+    Saltar al contenido
+  </a>
+
+  <!-- BLOQUE 1: encabezado y navegación -->
+  <header class="encabezado">
+    <nav
+      class="navbar navbar-expand-lg container"
+      aria-label="Navegación principal"
+    >
+      <a class="navbar-brand marca" href="index.html">
+        <span class="simbolo-marca" aria-hidden="true">f.</span>
+        FoodFinder
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal"
+        aria-expanded="false"
+        aria-label="Abrir o cerrar menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto gap-lg-4">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="resultados.html">
+              Buscar recetas
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido" class="container seccion">
+    <article aria-labelledby="tituloReceta">
+
+      <!-- BLOQUE 2: información principal -->
+      <p class="etiqueta">HOY COCINAMOS</p>
+
+      <h1 id="tituloReceta">Pollo teriyaki</h1>
+
+      <p class="lead text-secondary mb-4">
+        Una idea para transformar los ingredientes de tu cocina.
+      </p>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-md-7">
+          <div
+            class="imagen-detalle fondo-pollo"
+            role="img"
+            aria-label="Ilustración de pollo acompañado de arroz"
+          >
+            <span aria-hidden="true">🍗 🍚</span>
+          </div>
+        </div>
+
+        <!-- BLOQUE 3: ingredientes -->
+        <section
+          class="col-md-5"
+          aria-labelledby="tituloIngredientes"
+        >
+          <div class="panel-ingredientes h-100">
+            <p class="etiqueta">LO QUE NECESITAS</p>
+
+            <h2 id="tituloIngredientes">
+              Ingredientes
+            </h2>
+
+            <ul class="lista-ingredientes">
+              <li>Pechuga de pollo</li>
+              <li>Arroz</li>
+              <li>Salsa de soya</li>
+              <li>Ajo</li>
+              <li>Jengibre</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- BLOQUE 4: preparación con contenido estático -->
+      <section
+        class="preparacion"
+        aria-labelledby="tituloPreparacion"
+      >
+        <p class="etiqueta">PASO A PASO</p>
+
+        <h2 id="tituloPreparacion">
+          Preparación
+        </h2>
+
+        <p class="text-secondary">
+          Texto de muestra para visualizar la maquetación;
+          no constituye una receta completa.
+        </p>
+
+        <p>
+          <strong>1. Prepara los ingredientes.</strong>
+          Organiza el pollo, el arroz y los ingredientes de la salsa.
+        </p>
+
+        <p>
+          <strong>2. Cocina el platillo.</strong>
+          Este espacio presenta las indicaciones de cocción
+          de la receta.
+        </p>
+
+        <p>
+          <strong>3. Sirve y acompaña.</strong>
+          Este párrafo muestra las indicaciones finales
+          de presentación.
+        </p>
+      </section>
+
+      <!-- BLOQUE 5: enlace de regreso -->
+      <a href="resultados.html" class="btn boton-principal">
+        ← Volver a resultados
+      </a>
+
+      <p class="nota mt-3">
+        Ficha estática de ejemplo · Fase 2
+      </p>
+    </article>
+  </main>
+
+  <!-- BLOQUE 6: pie de página -->
+  <footer class="pie-pagina">
+    <div
+      class="container d-flex flex-column flex-sm-row
+             justify-content-between gap-2"
+    >
+      <p class="mb-0">
+        <strong>FoodFinder</strong> — Encuentra. Cocina. Disfruta.
+      </p>
+
+      <p class="mb-0">
+        Proyecto académico · Fase 2
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
